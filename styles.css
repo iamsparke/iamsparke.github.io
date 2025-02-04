@@ -1,0 +1,109 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f3e67;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+/* Cont */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 255, 0.2);
+    transform: scale(0.95);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Logo i guess */
+.logo {
+   display: block;
+   margin: 180px auto 30px;
+    width: 250px;
+    margin-bottom: 7px;
+    animation: float 2s infinite ease-in-out;
+}
+
+/* Buttons  , don,t change*/
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.download { background-color: #28a745; color: white; }
+.github { background-color: white; color: black; }
+.telegram { background-color: #0088cc; color: white; }
+
+.material-symbols-outlined {
+    font-size: 18px; /*  size */
+    vertical-align: middle; 
+   margin-right: 1px; /* margij ig */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.client-description {
+    margin-top: 30px;
+}
+
+
+.chart-container {
+    margin-top: 20px;
+}
+
+.chart {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.chart th, .chart td {
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.chart th {
+    background-color: #0088cc;
+}
+
+.chart td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
